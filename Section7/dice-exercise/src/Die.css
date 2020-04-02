@@ -1,0 +1,52 @@
+i {
+    font-size: 150px;
+    color: black;
+}
+
+.Die{
+    display: inline-block;
+    margin: 30px;
+}
+
+.Die .blue{
+    color: #89cff0;
+}
+
+.Die .pink{
+    color: #ffc4f0;
+}
+
+.Die .purple{
+    color: #b19cd9;
+}
+
+.Die .orange{
+    color: #ff995e;
+}
+
+.Die .green{
+    color: #77dd77;
+}
+
+.Die .yellow{
+    color: #ffde4dd8;
+}
+
+.Die .animation{
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% { transform: translate(5px, 5px) rotate(0deg); }
+    10% { transform: translate(-5px, -6px) rotate(-5deg); }
+    20% { transform: translate(-7px, 0px) rotate(5deg); }
+    30% { transform: translate(7px, 6px) rotate(0deg); }
+    40% { transform: translate(5px, -5px) rotate(5deg); }
+    50% { transform: translate(-5px, 6px) rotate(-5deg); }
+    60% { transform: translate(-7px, 5px) rotate(0deg); }
+    70% { transform: translate(7px, 5px) rotate(-5deg); }
+    80% { transform: translate(-5px, -5px) rotate(5deg); }
+    90% { transform: translate(5px, 6px) rotate(0deg); }
+    100% { transform: translate(5px, -6px) rotate(-5deg); }
+  }

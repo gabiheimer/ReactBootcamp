@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Gotu&display=swap');
+
+html{
+    width: 100%;
+    height: 100vh;
+    font-family: 'Gotu', sans-serif;
+    text-align: center;
+}
+
+#root{
+    margin-top: 70px;
+    width: 100%;
+    height: 100vh;
+}
