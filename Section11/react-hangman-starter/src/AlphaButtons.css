@@ -1,0 +1,30 @@
+.AlphaButtons button{
+    background: rgb(116, 223, 255);
+    border: none;
+    box-sizing: border-box;
+    margin: 10px;
+    padding-bottom: 10px;
+    font-size: 25px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;;
+    text-align: center;
+    border-radius: 100%;
+    color: white;
+}
+
+.AlphaButtons button:focus{
+    outline: none;
+}
+
+.AlphaButtons button:hover, .AlphaButtons button:disabled{
+    background: rgba(116, 223, 255, 0.50);
+    color: whitesmoke;
+}
+
+.AlphaButtons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 40%;
+}

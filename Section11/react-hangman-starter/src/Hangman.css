@@ -1,0 +1,70 @@
+.Hangman{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Hangman img{
+  width: 200px;
+  height: 250px;
+}
+
+.Hangman-word{
+  font-size: 50px;
+  margin: 30px;
+  letter-spacing: 20px;
+}
+
+.Hangman-restart{
+  font-size: 25px;
+  margin: 30px;
+  background: #ff9823;
+  border: none;
+  padding: 10px;
+  color: white;
+  border-radius: 10px;;
+}
+
+.Hangman-restart:hover{
+  background: #ff9823b4;
+  color: whitesmoke;
+}
+
+.Hangman-restart:focus{
+  outline: none;
+}
+
+.Hangman-win{
+  color: greenyellow;
+  font-size: 100px;
+  margin: 0;
+  letter-spacing: 10px;
+  text-align: center;
+  line-height: 100px;
+  margin: 30px;
+}
+
+.Hangman-lose{
+  color: red;
+  font-size: 100px;
+  margin: 0;
+  letter-spacing: 10px;
+  text-align: center;
+  line-height: 100px;
+  margin: 30px;
+}
+
+.Hangman-lossMessage{
+  text-align: center;
+}
+
+.Hangman-guesses{
+  font-size: 20px;
+  margin: 10px;
+}
+
+.Hangman h1{
+  font-size: 50px;
+  letter-spacing: 20px;
+  margin-top: 10px;
+}

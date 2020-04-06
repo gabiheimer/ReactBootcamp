@@ -1,0 +1,12 @@
+.WiseSquare{
+    font-size: 50px;
+    width: 100px;
+    height: 100px;
+    background: purple;
+    line-height: 100px;
+    text-align: center;
+}
+
+.WiseSquare:hover{
+    background: lime;
+}
