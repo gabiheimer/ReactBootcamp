@@ -1,0 +1,49 @@
+.Cell {
+  height: 100px;
+  width: 100px;
+  margin:0;
+  padding: 0;
+  background-color: #1d1d1d;
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+}
+
+.Cell:hover{
+  background-color: #ffacfc49;
+}
+
+.Cell-lit {
+  background-color: #ffacfc;
+}
+
+.Cell-lit:hover {
+  background-color: #ffacfcbe;
+}
+
+.Cell-top-left{
+  border-top-left-radius: 30px;
+}
+
+.Cell-top-right{
+  border-top-right-radius: 30px;
+  border-right: none;;
+}
+
+.Cell-bottom-left{
+  border-bottom-left-radius: 30px;
+  border-bottom: none;
+}
+
+.Cell-bottom-right{
+  border-bottom-right-radius: 30px;
+  border-bottom:none;
+  border-right: none;
+}
+
+.Cell-right{
+  border-right: none;
+}
+
+.Cell-bottom{
+  border-bottom: none;
+}

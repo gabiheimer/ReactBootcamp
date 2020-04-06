@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url(//fonts.googleapis.com/css?family=Vibur);
+
+.Board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Board h1{
+  margin: 30px !important;
+  font-family: 'Vibur', cursive;
+  font-weight: 100;
+  color: #f148fb;
+  font-size: 100px;
+  margin: 0;
+  text-transform: uppercase;
+  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #f148fb, 0 0 0.5em #f148fb, 0 0 0.1em #f148fb, 0 10px 3px #000;
+}
+
+.Board-won{
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Board-won button{
+  background-color: #1d1d1d;
+  border: none;
+  color: #ffacfc;
+  box-shadow: 0 0 7px 3px #560a86, 0 0 12px 7px #560a86d7, 0 0 17px 11px #560a86c4;
+  font-family: 'Vibur', cursive;
+  font-size: 20px;
+  border-radius: 10px;
+  width: 150px;
+  height: 50px;
+  margin: 20px;
+}
+
+.Board-won button:focus{
+  outline: none;
+}
+
+.Board-won button:hover{
+  background-color: #560a864b;
+}
+
+.Board h1 .purple{
+  color: #7122fa;
+  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #7122fa, 0 0 0.5em #7122fa, 0 0 0.1em #7122fa, 0 10px 3px #000;
+}
+
+.Board h1 .b2{
+  animation: blink2 linear infinite 3s;
+}
+
+.Board h1 .b1{
+  animation: blink1 linear infinite 2s;
+}
+
+.Board-table{
+  border-radius: 30px;
+  box-shadow: 0 0 7px 3px #560a86, 0 0 12px 7px #560a86d7, 0 0 17px 11px #560a86c4;
+  background-color: black;
+}
+
+.Board-table tr{
+  margin: 0;
+  padding:0;
+  background-color: black;
+}
+
+table{
+  border-collapse: collapse;
+}
+
+@keyframes blink2 {
+  78% {
+    color: #7122fa;
+    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #7122fa, 0 0 0.5em #7122fa, 0 0 0.1em #7122fa, 0 10px 3px #000;
+  }
+  79%{
+     color: #333;
+  }
+  80% {
+    
+    text-shadow: none;
+  }
+  81% {
+    color: #7122fa;
+    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #7122fa, 0 0 0.5em #7122fa, 0 0 0.1em #7122fa, 0 10px 3px #000;
+  }
+  82% {
+    color: #333;
+    text-shadow: none;
+  }
+  83% {
+    color: #7122fa;
+    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #7122fa, 0 0 0.5em #7122fa, 0 0 0.1em #7122fa, 0 10px 3px #000;
+  }
+  92% {
+    color: #333;
+    text-shadow: none;
+  }
+  92.5% {
+    color: #7122fa;
+    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #7122fa, 0 0 0.5em #7122fa, 0 0 0.1em #7122fa, 0 10px 3px #000;
+  }
+}
+
+@keyframes blink1 {
+  78% {
+    color: #f148fb;
+    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #f148fb, 0 0 0.5em #f148fb, 0 0 0.1em #f148fb, 0 10px 3px #000;
+  }
+  79%{
+     color: #333;
+  }
+  80% {
+    
+    text-shadow: none;
+  }
+  81% {
+    color: #f148fb;
+    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #f148fb, 0 0 0.5em #f148fb, 0 0 0.1em #f148fb, 0 10px 3px #000;
+  }
+  82% {
+    color: #333;
+    text-shadow: none;
+  }
+  83% {
+    color: #f148fb;
+    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #f148fb, 0 0 0.5em #f148fb, 0 0 0.1em #f148fb, 0 10px 3px #000;
+  }
+  92% {
+    color: #333;
+    text-shadow: none;
+  }
+  92.5% {
+    color: #f148fb;
+    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #f148fb, 0 0 0.5em #f148fb, 0 0 0.1em #f148fb, 0 10px 3px #000;
+  }
+}
