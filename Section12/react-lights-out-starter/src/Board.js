@@ -57,9 +57,7 @@ class Board extends Component {
     for(var i = 0; i < this.props.nrows; i++){
       board.push([]);
       for(var j = 0; j < this.props.ncols; j++){
-        let rand = Math.random();
-        if(rand < this.props.chanceLightsOn) board[i].push(true);
-        else board[i].push(false);
+        board[i].push(Math.random() < this.props.chanceLightsOn);
       }
     }
 
