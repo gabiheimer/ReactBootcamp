@@ -37,6 +37,7 @@
   width: 150px;
   height: 50px;
   margin: 20px;
+  transition: all 0.2s linear;
 }
 
 .Board-won button:focus{

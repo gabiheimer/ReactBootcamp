@@ -57,7 +57,15 @@ class Board extends Component {
     for(var i = 0; i < this.props.nrows; i++){
       board.push([]);
       for(var j = 0; j < this.props.ncols; j++){
-        board[i].push(Math.random() < this.props.chanceLightsOn);
+        board[i].push(0);
+      }
+    }
+
+    for(var i = 0; i < this.props.nrows; i++){
+      for(var j = 0; j < this.props.ncols; j++){
+        if(Math.random() < this.props.chanceLightsOn){
+          this.flipCellsAround(`${i}-${j}`, board);
+        }
       }
     }
 
@@ -73,9 +81,11 @@ class Board extends Component {
 
   /** handle changing a cell: update board & determine if winner */
 
-  flipCellsAround(coord) {
+  flipCellsAround(coord, b) {
     let {ncols, nrows} = this.props;
-    let board = this.state.board.slice();
+    let board;
+    if(!b) board = this.state.board.slice();
+    else board = b;
     let [row, col] = coord.split("-").map(Number);
 
 
