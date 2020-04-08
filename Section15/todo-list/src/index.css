@@ -1,0 +1,23 @@
+html{
+  background-image: url('./back.png');
+}
+
+button{
+  transition: .3s ease;
+}
+
+button:hover{
+  transform: scale(1.5);
+}
+
+input:focus{
+  outline: none;
+}
+
+button:focus{
+  outline: none;
+}
+
+::selection{
+  color: #beebe9;
+}

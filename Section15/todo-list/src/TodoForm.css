@@ -1,0 +1,32 @@
+.TodoForm{
+    margin: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.TodoForm-input{
+    width: 80%;
+    height: 50px;
+    font-size: 20px;
+    padding: 5px;
+    font-family: 'Baloo Thambi 2', cursive;
+    border: none;
+    color: #8ac6d1;
+}
+
+.TodoForm button{
+    background: none;
+    border: none;
+    color: #fffdf9;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.TodoForm-edit{
+    width: 90%;
+}
+
+.TodoForm-edit input{
+    height: 30px;
+}
