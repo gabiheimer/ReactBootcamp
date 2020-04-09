@@ -1,0 +1,16 @@
+ .loader{
+     margin: auto;
+     border: 8px solid lightgray;
+     width: 60px;
+     height: 60px;
+     border-top-color: rgb(139, 255, 220);
+     border-bottom-color: rgb(139, 255, 220);
+     border-radius: 100%;
+     animation: coloredspin 2s linear infinite;
+ }
+
+ @keyframes coloredspin {
+     100%{
+         transform: rotate(360deg);
+     }
+ }
