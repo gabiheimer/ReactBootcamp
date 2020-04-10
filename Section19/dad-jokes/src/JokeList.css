@@ -46,7 +46,13 @@
     border-radius: 20px;
     border: none;
     margin: 30px;
-    background: rgb(72, 185, 255);
+    background: linear-gradient(
+        135deg,
+        rgb(127, 236, 255) 0%,
+        rgb(127, 236, 255) 50%,
+        rgb(255, 128, 213) 50%,
+        rgb(255, 128, 213) 100%
+    );
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.418);
     font-family: 'Baloo Thambi 2', cursive;
     color: white;
@@ -55,6 +61,7 @@
     font-weight: bold;
     outline: none;
     transition: .25s;
+    cursor: pointer;
 }
 
 .JokeList-sidebar-btn:not([disabled]):hover{
@@ -84,6 +91,7 @@
     text-transform: capitalize;
     font-size: 50px;
     letter-spacing: normal;
+    margin-right: 10px;
 }
 
 /* List */

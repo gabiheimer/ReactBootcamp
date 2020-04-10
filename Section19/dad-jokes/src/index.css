@@ -1,7 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Baloo+Thambi+2:wght@400;700&display=swap');
 
 body{
-    background: lightskyblue;
+    background: linear-gradient(
+        135deg,
+        rgb(127, 236, 255) 0%,
+        rgb(127, 236, 255) 50%,
+        rgb(255, 128, 213) 50%,
+        rgb(255, 128, 213) 100%
+    );
     height: 100vh;
     margin: 0;
     padding: 0;

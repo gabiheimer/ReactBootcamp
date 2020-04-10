@@ -72,3 +72,22 @@
     align-items: center;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.445);
 }
+
+.Joke-emoji:hover{
+    animation: littleSpin linear .7s;
+}
+
+@keyframes littleSpin{
+    25%{
+        transform: rotate(-20deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: rotate(10deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}

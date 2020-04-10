@@ -15,6 +15,7 @@ class JokeList extends Component{
         }
         this.changeScore = this.changeScore.bind(this);
         this.newJokes = this.newJokes.bind(this);
+        this.seenJokes = new Set();
     }
 
     static defaultProps = {
@@ -22,17 +23,18 @@ class JokeList extends Component{
     }
 
     async componentDidMount(){
-        let storedJokes = JSON.parse(localStorage.getItem('dadJokes'));
-        if(storedJokes){
-            console.log(storedJokes);
-            this.setState({isLoaded: true, jokes: storedJokes});
+        let storedJokes = JSON.parse(window.localStorage.getItem('dadJokes'));
+        if(storedJokes && storedJokes.length > 0){
+            this.setState({isLoaded: true, jokes: storedJokes}, () => {
+                this.seenJokes = new Set(this.state.jokes.map(j => j.id));
+            });
         } else {
             this.newJokes();
         }
     }
 
     componentDidUpdate(){
-        localStorage.setItem('dadJokes', JSON.stringify(this.state.jokes));
+        window.localStorage.setItem('dadJokes', JSON.stringify(this.state.jokes));
     }
 
     changeScore(id, qty){
@@ -62,10 +64,11 @@ class JokeList extends Component{
                 score: 0
             };
 
-            if(this.state.jokes.find(joke => (joke.id === newJoke.id))){
+            if(this.seenJokes.has(newJoke.id)){
                 continue;
             }
 
+            this.seenJokes.add(newJoke.id)
             newJokeCount++;
             this.setState(st => ({jokes: [...st.jokes, newJoke]}));
         }
@@ -100,7 +103,7 @@ class JokeList extends Component{
         return(
             <div className='JokeList'>
                 <div className='JokeList-sidebar'>
-                    <h1 className='JokeList-sidebar-title'><span>Dad</span> Jokes</h1>
+                    <h1 className='JokeList-sidebar-title'><span>Dad</span>Jokes</h1>
                     <div className='JokeList-sidebar-smiley'>
                         <img src={smiley} />
                     </div>
