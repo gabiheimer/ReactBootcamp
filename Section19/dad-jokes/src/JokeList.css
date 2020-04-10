@@ -1,0 +1,166 @@
+.JokeList{
+    display: flex;
+    width: 70vw;
+    align-items: center;
+}
+
+/* Sidebar */
+
+.JokeList-sidebar{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 20vw;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(124, 122, 255);
+    border-radius: 5px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.418);
+}
+
+.JokeList-sidebar-smiley{
+    font-size: 150px;
+    border-radius: 100%;
+    width: 190px;
+    height: 190px;
+    line-height: 190px;
+    box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.2), 0px 6px 3px rgba(0, 0, 0, 0.18), 0px 7px 3px rgba(0, 0, 0, 0.16);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.JokeList-sidebar-smiley:hover{
+    animation: jiggle .5s infinite;
+}
+
+.JokeList-sidebar-smiley img{
+    width: 180px;
+}
+
+.JokeList-sidebar-btn{
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    border: none;
+    margin: 30px;
+    background: rgb(72, 185, 255);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.418);
+    font-family: 'Baloo Thambi 2', cursive;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    outline: none;
+    transition: .25s;
+}
+
+.JokeList-sidebar-btn:not([disabled]):hover{
+    transform: translateY(-3px);
+}
+
+.JokeList-sidebar-btn:active{
+    transform: translateY(1px);
+}
+
+.JokeList-sidebar-btn[disabled]{
+    cursor: not-allowed;
+}
+
+.JokeList-sidebar-title{
+    color: white;
+    font-size: 40px;
+    font-family: 'Architects Daughter', cursive;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.JokeList-sidebar-title span{
+    font-family: 'Baloo Thambi 2', cursive;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 50px;
+    letter-spacing: normal;
+}
+
+/* List */
+
+.JokeList-list{
+    display: inline-flex;
+    flex-direction: column;
+    height: 70vh;
+    width: 50vw;
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.418);
+}
+
+.JokeList-loader{
+    display: inline-flex;
+    flex-direction: column;
+    height: 70vh;
+    width: 50vw;
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.418);
+}
+
+.JokeList-loader .simplebar-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+}
+
+.JokeList-loader .simplebar-content p{
+    font-family: 'Baloo Thambi 2', cursive;
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(255, 226, 60);
+    margin: 0;
+}
+
+.Loader{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.Loader i{
+    font-size: 120px;
+    color: rgb(255, 226, 60);
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes jiggle{
+    20% {
+        transform: rotate(-10deg) translate(-5px, -3px);
+    }
+    40%{
+        transform: rotate(0deg) translate(0px, 0px);
+    }
+    60%{
+        transform: rotate(10deg) translate(5px ,5px);
+    }
+    80%{
+        transform: rotate(0deg) translate(-5px, 5px);
+    }
+    100%{
+        transform: rotate(-5deg) translate(0px,0px);
+    }
+}

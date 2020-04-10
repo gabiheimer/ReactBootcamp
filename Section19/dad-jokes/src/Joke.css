@@ -1,0 +1,74 @@
+.Joke{
+    border-bottom: 1px solid rgb(255, 223, 228);
+    margin: 0;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    font-family: 'Baloo Thambi 2', cursive;
+    color: rgb(128, 126, 126);
+    padding: 0;
+    justify-content: space-between;
+    padding-right: 20px;
+}
+
+.Joke-text{
+    word-wrap: initial;
+    width: 70%;
+    font-size: 17px;
+
+}
+
+.Joke-scoreArea{
+    margin: 5px;
+}
+
+.Joke-scoreArea button{
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin: 3px;
+    font-size: 20px;
+    color: rgb(161, 160, 160);
+}
+
+.Joke-scoreArea button.up:hover{
+    color: rgb(95, 212, 41);
+}
+
+.Joke-scoreArea button.down:hover{
+    color: rgb(201, 29, 29);
+}
+
+.Joke-scoreArea button.down:active{
+    transform: translateY(3px);
+}
+
+.Joke-scoreArea button.up:active{
+    transform: translateY(-3px);
+}
+
+.Joke-scoreArea .score{
+    font-size: 20px;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 40px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.253);
+}
+
+.Joke-emoji{
+    font-size: 50px;
+    margin-left: 20px;
+    text-align: right;
+    margin-right: 0;
+    border-radius: 100%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.445);
+}
