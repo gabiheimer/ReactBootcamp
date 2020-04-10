@@ -1,7 +1,7 @@
 .Joke{
     border-bottom: 1px solid rgb(255, 223, 228);
     margin: 0;
-    height: 80px;
+    height: 100px;
     display: flex;
     align-items: center;
     font-family: 'Baloo Thambi 2', cursive;

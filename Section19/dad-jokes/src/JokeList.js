@@ -44,6 +44,8 @@ class JokeList extends Component{
             }
         });
 
+        updatedJokes.sort(function(a,b){ return b.score-a.score});
+
         this.setState({jokes: updatedJokes});
     }
 
