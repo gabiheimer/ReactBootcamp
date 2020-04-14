@@ -1,0 +1,17 @@
+.App-nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 5vh;
+    background-color: rgb(29, 27, 31);
+}
+
+.App-nav .link{
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.App-nav .active-link{
+    color: lightblue;
+}

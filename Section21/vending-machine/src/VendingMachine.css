@@ -1,0 +1,33 @@
+.VendingMachine{
+    height: 95vh;
+    margin: 0;
+    padding: 0;
+    background-image: url('./machine.webp');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.VendingMachine-links{
+    width: 400px;
+    text-align: center;
+    margin: 150px;
+}
+
+.VendingMachine-links .link{
+    color: black;
+    text-transform: uppercase;
+    display: block;
+    text-decoration: none;
+    margin: 20px;
+}
+
+.VendingMachine-title{
+    width: 400px;
+    margin: 150px;
+    text-transform: uppercase;
+    text-align: center;
+}
