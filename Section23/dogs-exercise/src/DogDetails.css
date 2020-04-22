@@ -1,0 +1,70 @@
+.DogDetails{
+    display: flex;
+    height: 94vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(31, 33, 36);
+}
+
+.DogDetails-details img{
+    width: 350px;
+}
+
+.DogDetails-facts{
+    text-align: left;
+    margin: 20px 20px;
+}
+
+.DogDetails-facts .fact{
+    height: 50px;
+    line-height: 50px;
+    border-top: 1px solid rgb(150, 150, 150);
+}
+
+.DogDetails-facts .fact:last-child{
+    border-bottom: 1px solid rgb(150, 150, 150);
+}
+
+.DogDetails-details{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Comfortaa', cursive;
+    width: 350px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.205) ,0px 15px 30px rgba(0, 0, 0, 0.473);
+    background-color: white;
+}
+
+.DogDetails-details h1{
+    font-size: 26px;
+    margin: 10px 20px;
+}
+
+.DogDetails-details h3{
+    font-size: 16px;
+    margin: 0 20px;
+    color: rgb(94, 94, 94);
+}
+
+.DogDetails-button{
+    width: 310px;
+    margin: 20px;
+}
+
+.DogDetails-button button{
+    font-family: 'Comfortaa', cursive;
+    font-size: 14px;
+    padding: 10px;
+    background-color: rgb(63, 160, 177);
+    color: white;
+    border: none;
+    outline: none;
+    text-align: left;
+    width: 80px;
+    margin: 20px 0px;
+    cursor: pointer;
+}
+
+.DogDetails-button button:hover{
+    background-color: rgba(63, 160, 177, 0.767);
+}

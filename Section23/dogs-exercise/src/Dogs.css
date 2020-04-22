@@ -1,0 +1,50 @@
+.Dogs{
+    font-family: 'Comfortaa', cursive;
+}
+
+.Dogs-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.Dogs-dog{
+    text-align: center;
+    margin: 30px;
+}
+
+.Dogs-dog h1{
+    font-weight: 400;
+    text-decoration: none;
+    color: rgb(31, 33, 36);
+}
+
+.Dogs-dog a:hover, .Dogs-dog h1:hover{
+    color: rgba(31, 33, 36, 0.733);
+}
+
+.Dogs-dog a{
+    text-decoration: none;
+}
+
+.Dogs-dog img {
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.205) ,0px 15px 30px rgba(0, 0, 0, 0.473);
+    filter: grayscale(100%);
+    transition: all .3  s linear;
+}
+
+.Dogs-dog img:hover{
+    filter: grayscale(0%);
+}
+
+.Dogs-title{
+    color: rgb(31, 33, 36);
+    text-align: center;
+    font-weight: 400;
+    font-size: 50px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}

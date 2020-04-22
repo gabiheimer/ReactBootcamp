@@ -1,0 +1,22 @@
+.Navbar{
+    background-color: rgb(31, 33, 36);
+    font-family: 'Comfortaa', cursive;
+    padding: 15px;
+}
+
+.Navbar a{
+    color: lightslategray;
+    font-family: 'Comfortaa', cursive;
+    text-decoration: none;
+    margin: 5px;
+}
+
+.Navbar h3{
+    display: inline;
+    color: white;
+    margin: 10px;
+}
+
+.Navbar a.Navbar-activeLink{
+    color: white;
+}
