@@ -1,9 +1,11 @@
 export default {
     Palette: {
         height: "100vh",
+        width: '100vw',
         display: "flex",
         flexDirection: "column",
-        overflow: "hidden"
+        margin: '0',
+        overflow: 'hidden'
     }, colors: {
         height: "90%"
     }, goBack: {

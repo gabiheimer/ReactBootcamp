@@ -9,6 +9,8 @@ export default {
         position: 'relative',
         cursor: 'pointer',
         marginBottom: '-4px',
+        maxHeight: '100vh',
+        maxWidth: '100vw',
         "&:hover button": {
             opacity: '1'
         }
@@ -92,18 +94,20 @@ export default {
     boxContent: {
         position: 'absolute',
         padding: '10px',
-        width: '100%',
         left: '0px',
         bottom: '0px',
         color: 'black',
         letterSpacing: '1px',
         textTransform: 'uppercase',
-        fontSize: '12px'
+        fontSize: '12px',
+        margin: '0'
     },
     copyOverlay: {
         opacity: '0',
         width: '100%',
         height: '100%',
+        maxWidth: '100vw',
+        maxHeight: '100vh',
         zIndex: '0',
         transition: 'transform 0.6s ease-in-out',
         transform: 'scale(0.1)'
@@ -111,6 +115,8 @@ export default {
     showOverlay: {
         opacity: '1',
         transform: 'scale(50)',
+        maxWidth: '100vw',
+        maxHeight: '100vh',
         zIndex: '10',
         position: 'absolute'
     }

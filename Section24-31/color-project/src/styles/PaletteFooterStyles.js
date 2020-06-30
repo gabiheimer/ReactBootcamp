@@ -5,9 +5,11 @@ export default {
         display: 'flex',
         justifyContent: "flex-end",
         alignItems: 'center',
-        fontWeight: 'bold'
+        fontWeight: 'bold',
+        margin: 0
     }, emoji: {
         fontSize: '1.5rem',
-        margin: '0 1rem'
+        margin: '0',
+        marginLeft: '1rem'
     }
 }

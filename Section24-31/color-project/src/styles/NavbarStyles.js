@@ -3,7 +3,8 @@ export default {
         display: "flex",
         alignItems: "center",
         justifyContent: "lex-start",
-        height: "6vh"
+        height: "6vh",
+        margin: '0'
     }, logo: {
         marginRight: "15px",
         padding: "0 13px",

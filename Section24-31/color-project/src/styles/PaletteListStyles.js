@@ -1,7 +1,7 @@
 export default {
     root: {
-        backgroundColor: 'blue',
-        height: '100vh',
+        height: '100%',
+        paddingBottom: '2em',
         display: 'flex',
         alignItems: 'flex-start',
         justifyContent: 'center'
@@ -24,10 +24,10 @@ export default {
         }
     },
     palettes: {
-        boxSizing: 'border-box',
+        boxSizing: 'content-box',
         width: '100%',
         display: 'grid',
         gridTemplateColumns: 'repeat(3, 30%)',
-        gridGap: '5%'
+        gridGap: '2em'
     }
 }
