@@ -28,7 +28,7 @@ class App extends Component{
 
   render(){
     return(
-      <div>
+      <div style={{height: '100%'}}>
         <Switch>
           <Route exact path="/palette/new" render={(routeProps) => <NewPaletteForm {...routeProps} palettes={this.state.palettes} savePalette={this.savePalette}/>} />
           <Route exact path='/' render={(routeProps) =>  <PaletteList {...routeProps} palettes={this.state.palettes}/>}/>

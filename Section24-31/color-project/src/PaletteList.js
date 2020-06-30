@@ -12,16 +12,18 @@ class PaletteList extends Component{
     render(){
         const {palettes, classes} = this.props;
         return(
-            <div className={classes.root}>
-                <div className={classes.container}>
-                    <nav className={classes.nav}>
-                        <h1>React Colors</h1>
-                        <Link to="/palette/new">Create Palette</Link>
-                    </nav>
-                    <div className={classes.palettes}>
-                        {palettes.map(p => (
-                            <MiniPalette {...p} handleClick={() => this.goToPalette(p.id)}/>
-                        ))}
+            <div className={classes.PaletteListContainer}>
+                <div className={classes.root}>
+                    <div className={classes.container}>
+                        <nav className={classes.nav}>
+                            <h1>React Colors</h1>
+                            <Link to="/palette/new">Create Palette</Link>
+                        </nav>
+                        <div className={classes.palettes}>
+                            {palettes.map(p => (
+                                <MiniPalette {...p} handleClick={() => this.goToPalette(p.id)}/>
+                            ))}
+                        </div>
                     </div>
                 </div>
             </div>

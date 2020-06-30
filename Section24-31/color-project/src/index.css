@@ -3,7 +3,6 @@
 html {
   margin: 0;
   height: 100%;
-  background-color: blue;
 }
 
 body {
@@ -14,6 +13,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  height: 100%;
 }
 
 code {

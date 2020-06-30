@@ -1,6 +1,10 @@
 export default {
+    PaletteListContainer: {
+        backgroundColor: 'blue',
+        height: '100%'
+    },
     root: {
-        height: '100%',
+        backgroundColor: 'blue',
         paddingBottom: '2em',
         display: 'flex',
         alignItems: 'flex-start',
