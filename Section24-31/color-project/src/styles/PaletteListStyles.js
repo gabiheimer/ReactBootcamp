@@ -31,7 +31,7 @@ export default {
         boxSizing: 'content-box',
         width: '100%',
         display: 'grid',
-        gridTemplateColumns: 'repeat(3, 30%)',
+        gridTemplateColumns: 'repeat(3, 1fr)',
         gridGap: '2em'
     }
 }
