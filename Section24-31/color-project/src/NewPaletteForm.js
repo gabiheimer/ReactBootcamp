@@ -7,11 +7,13 @@ import Divider from '@material-ui/core/Divider';
 import IconButton from '@material-ui/core/IconButton';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import { Button } from '@material-ui/core';
-import DraggableColorList from './DraggableColorList';
 import { arrayMove } from 'react-sortable-hoc';
+
+import DraggableColorList from './DraggableColorList';
 import PaletteFormNav from './PaletteFormNav';
 import ColorPickerForm from './ColorPickerForm';
 import styles from './styles/NewPaletteFormStyles';
+import seedColors from './seedColors';
 
 class NewPaletteForm extends Component{
     static defaultProps = {
@@ -22,7 +24,7 @@ class NewPaletteForm extends Component{
       super(props);
       this.state = {
         open: true,
-        colors: [...this.props.palettes[0].colors]
+        colors: seedColors[0].colors
       }
       this.handleDrawerClose = this.handleDrawerClose.bind(this);
       this.handleDrawerOpen = this.handleDrawerOpen.bind(this);
@@ -74,9 +76,18 @@ class NewPaletteForm extends Component{
     }
 
     addRandomColor(){
-      const randomPaletteIdx = Math.floor(Math.random()*this.props.palettes.length);
-      const randomColorIdx = Math.floor(Math.random()*this.props.palettes[randomPaletteIdx].colors.length);
-      const randomColor = this.props.palettes[randomPaletteIdx].colors[randomColorIdx];
+      let colorIsDup = true;
+      let randomColor = {};
+
+      while(colorIsDup){
+        let randomPaletteIdx = Math.floor(Math.random()*this.props.palettes.length);
+        let randomColorIdx = Math.floor(Math.random()*this.props.palettes[randomPaletteIdx].colors.length);
+        randomColor = this.props.palettes[randomPaletteIdx].colors[randomColorIdx];
+        colorIsDup = this.state.colors.some(color => 
+          (color.name === randomColor.name || color.color === randomColor.color)
+        );
+      }
+
       this.setState({
         colors: [...this.state.colors, randomColor]
       });
@@ -144,7 +155,7 @@ class NewPaletteForm extends Component{
                       <ColorPickerForm
                         paletteFull={paletteFull}
                         addNewColor={this.addNewColor}
-                        colors={this.state.colors}
+                        colors={colors}
                       />
                     </div>
                     
@@ -158,7 +169,7 @@ class NewPaletteForm extends Component{
 
                     {/* Color Palette */}
                     <DraggableColorList 
-                      colors={this.state.colors} 
+                      colors={colors} 
                       removeColor={this.removeColor} 
                       axis='xy'
                       onSortEnd={this.onSortEnd}

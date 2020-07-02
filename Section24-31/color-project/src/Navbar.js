@@ -7,8 +7,9 @@ import MenuItem from '@material-ui/core/MenuItem';
 import Snackbar from '@material-ui/core/Snackbar';
 import CloseIcon from '@material-ui/icons/Close';
 import IconButton from "@material-ui/core/IconButton";
-import styles from './styles/NavbarStyles';
 import 'rc-slider/assets/index.css';
+
+import styles from './styles/NavbarStyles';
 
 class Navbar extends Component{
     constructor(props){

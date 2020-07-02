@@ -66,7 +66,7 @@ class PaletteMetaForm extends Component{
                     aria-labelledby="form-dialog-title"
                 >
                     <DialogTitle id="form-dialog-title">Name Your Palette</DialogTitle>
-                    <ValidatorForm onSubmit={this.showEmojiPicker}>
+                    <ValidatorForm onSubmit={this.showEmojiPicker} instantValidate={false}>
                         <DialogContent>
                             <DialogContentText>
                                 Please enter a name for your new palette. Make sure it's unique!
