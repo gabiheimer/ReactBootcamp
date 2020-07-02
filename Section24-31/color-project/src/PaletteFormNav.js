@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import classNames from 'classnames';
-import CssBaseline from '@material-ui/core/CssBaseline';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
@@ -41,7 +40,6 @@ class PaletteFormNav extends Component{
 
         return(
             <div className={classes.root}>
-                <CssBaseline />
                 <AppBar
                     position="fixed"
                     color='default'

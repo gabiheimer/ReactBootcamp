@@ -40,7 +40,7 @@ class PaletteMetaForm extends Component{
         };
 
         this.props.handleSubmit(obj);
-        this.setState({stage: 'name', newPaletteName: ''});
+        this.setState({stage: '', newPaletteName: ''});
     }
 
     showEmojiPicker(){

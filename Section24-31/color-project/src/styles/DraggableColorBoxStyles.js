@@ -37,7 +37,9 @@ export default {
         textTransform: 'uppercase',
         fontSize: '12px',
         display: 'flex',
-        justifyContent: 'space-between'
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        boxSizing: 'border-box'
     }, deleteIcon: {
         transition: 'all 0.3s ease-in-out'
     }
