@@ -13,6 +13,7 @@ export default function (initialTodos){
         setTodos(updatedTodos);
     
     }
+    
     const toggleTodo = (todoId) => {
         const updatedTodos = todos.map(todo => (
             todo.id === todoId ? {...todo, completed: !todo.completed} : todo

@@ -26,7 +26,7 @@ function Todo({ task, completed, id, removeTodo, toggleTodo, editTodo }) {
                         {task}
                     </ListItemText>
                     <ListItemSecondaryAction>
-                    <IconButton onClick={() => toggle()} aria-label='Edit'>
+                        <IconButton onClick={() => toggle()} aria-label='Edit'>
                             <Edit />
                         </IconButton>
                         <IconButton onClick={() => removeTodo(id)} aria-label='Delete'>
