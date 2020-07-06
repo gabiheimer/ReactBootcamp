@@ -8,7 +8,7 @@ class TodoList extends Component{
     constructor(props){
         super(props);
         this.state = {
-            todos: JSON.parse(localStorage.getItem('TodoItems')),
+            todos: JSON.parse(localStorage.getItem('TodoItems')) || [],
             isEditing: ''
         }
 
